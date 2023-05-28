@@ -28,8 +28,10 @@
             >Web<span class="accent">Studio</span></a
           >
           <ul class="list menu">
-            <li class="menu-item">
-              <a href="./index.html" class="link menu-link">Studio</a>
+            <li class="menu-item underlining-container">
+              <a href="./index.html" class="link menu-link underlining"
+                >Studio</a
+              >
             </li>
             <li class="menu-item">
               <a href="./portfolio.html" class="link menu-link">Portfolio</a>
@@ -64,7 +66,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="modal-btn">Order Service</button>
+          <button type="button" class="modal-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -74,7 +78,6 @@
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="list section-list-aboutus">
-
             <li class="list-item-aboutus">
               <div class="box-icon-aboutus">
                 <svg class="icon-aboutus" width="64" height="64">
@@ -431,7 +434,6 @@
         <div class="social-footer">
           <p class="footer-description social-description">Social media</p>
           <ul class="footer-icon-list list">
-
             <li class="footer-icon-item">
               <a class="footer-icon-link link" href="">
                 <svg class="footer-icon" width="24" height="24">
@@ -467,5 +469,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal Window -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
